@@ -1,0 +1,105 @@
+Задание 1 var a = 1, b = 1, c, d;
+c = ++a; alert(c); // 2 префиксная форма, поэому сначала увеличивается a = 2, а потом присваивается значение 2 с;
+d = b++; alert(d); // 1 тут постфисная форма, поэтому сначала присвоение d=b => d=1, а потом b увеличивается на 1=> b=2;
+c = (2+ ++a); alert(c); // 5 префиксная форма, поэтому сначала a увеличивается на один а=3(из 2 строки a=2), с=2+3 =>
+c=5;
+d = (2+ b++); alert(d); // 4 тут постфиксная форма, поэтому сначала сложение (из 3 строки b=2), поэтому d=2+2 => d=4, a
+b = 3;
+alert(a); // 3 последние действия с а в 4 строке, а = 3;
+alert(b); // 3 последние действия с b в 5 строке, b = 3;
+
+
+Задание 2.
+var a = 2;
+var x = 1 + (a *= 2); 1 + (a=a*2)=1+4=5
+
+<script>
+    //задание 3 
+
+    /*var a = Math.round(Math.random() * (100 - (-100)) + (-100));
+    var b = Math.round(Math.random() * (100 - 1) + 1);
+
+    if (a >= 0 && b >= 0) {
+        console.log(a - b);
+    }
+    if (a < 0 && b < 0) {
+        console.log(a * b);
+    }
+
+    if ((a >= 0 && b < 0) || (a < 0 && b >= 0)) {
+        console.log(a + b);
+    }*/
+
+    //задание 4
+
+    /*
+    var c = Math.round(Math.random() * (15 - 1) + 1);
+
+    switch (c) {
+        case 1:
+            console.log(1);
+
+        case 2:
+            console.log(2);
+        case 3:
+            console.log(3);
+        case 4:
+            console.log(4);
+        case 5:
+            console.log(5);
+        case 6:
+            console.log(6);
+        case 7:
+            console.log(7);
+        case 8:
+            console.log(8);
+        case 9:
+            console.log(9);
+        case 10:
+            console.log(10);
+        case 11:
+            console.log(11);
+        case 12:
+            console.log(12);
+        case 13:
+            console.log(13);
+        case 14:
+            console.log(14);
+        case 15:
+            console.log(15);
+            break;
+    }
+    Задание 5
+    function getSum(a, b) {
+        return (a + b);
+    }
+    function getMulty(a, b) {
+        return (a * b);
+    }
+    function getDiv(a, b) {
+        return (a / b);
+    }
+    function getMinus(a, b) {
+        return (a - b);
+    }
+
+    console.log(getSum(2, 3));
+
+    Задание 6
+    function mathOperation(arg1, arg2, operation) {
+        switch (operation) {
+            case "+":
+                return (arg1 + arg2);
+            case "-":
+                return (arg1 - arg2);
+            case "*":
+                return (arg1 * arg2);
+            case "/":
+                return (arg1 / arg2);
+        }
+    }
+    console.log(mathOperation(6, 24, "+"));*/
+
+
+
+</script>
