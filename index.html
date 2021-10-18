@@ -1,0 +1,22 @@
+<script>
+    var object = {};
+    function f(number) {
+        if (number < 0 || number > 999) {
+            console.log('Неверное число' + object)
+        };
+
+        object.ed = number % 10;
+        object.des = Math.trunc(number / 10 % 10);
+        object.sotni = Math.trunc(number / 100);
+
+        return object;
+        console.log('Единицы' + ' ' + object.ed + ' сотни ' + object.sotni + ' десятки ' + object.des);
+    }
+
+    f(5360);
+
+
+
+
+
+</script>
