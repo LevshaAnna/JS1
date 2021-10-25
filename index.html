@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <img id="1" src="min/1.jpg" alt="">
+    <img id="2" src="min/2.jpg" alt="">
+    <img id="3" src="min/3.jpg" alt="">
+
+    <script>
+        var images = document.querySelectorAll('img');// получаем массив элементов img
+        var img = document.createElement("img");//создаем переменнную для новых(больших) картинок
+
+        for (var i = 0; i < images.length; i++) {
+            images[i].onclick = function changeSize() { //добавляем событие при нажатии на каждую картинку
+
+                img.src = "max/" + this.id + ".jpg"; // в новую переменную добавляем ссылку на новую картинку
+                img.innerHTML = " "; // после каждого нажатия, очищаем эту переменную
+
+                img.onerror = function () {
+
+                    alert("File is not found");
+                }
+
+                // img.onerror = alert("Not found")  - может глупый вопрос, но почему вот так не работает?
+
+
+            }
+
+            document.body.append(img);
+        }
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
