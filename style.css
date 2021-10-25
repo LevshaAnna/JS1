@@ -1,0 +1,21 @@
+.white {
+    background: #fff;
+
+ 
+};
+
+.black {
+    background:#000;
+
+
+};
+ table{
+     width: 700px;
+     height: 700px;
+     border-collapse: collapse;
+ };
+
+ tr, td{
+     width: 70px;
+     height: 70px;
+ }
